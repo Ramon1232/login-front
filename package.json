@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "jspdf": "^2.5.1",
     "next": "14.2.4",
     "next-auth": "^4.24.7",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^20",

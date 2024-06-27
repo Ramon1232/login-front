@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useSession } from 'next-auth/react';
+import Link from 'next/link';
 
 interface Beneficiario {
   id_beneficiario: number;
@@ -51,6 +52,11 @@ const Dashboard = () => {
       <button onClick={getBeneficiarios} className="btn btn-primary">
         Mostrar beneficiarios
       </button>
+      <Link href="/cargar">
+        <button className="btn btn-secondary">
+          Cargar beneficiarios
+        </button>
+      </Link>
       {beneficiarios.length > 0 && (
         <table className="table">
           <thead>
